@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}A propos{% endblock %}
+
+{% block body %}
+<div class="row align-items-center justify-content-center main-block">
+	<div class="col-lg-4 col-md-6 col-sm-7 m-2 pr-4 mt-3">
+		<div class="product-list-left-effect">
+			<img src="https://i.ibb.co/KsKWVJj/Capture-du-2021-01-28-22-17-12.png" class="img-fluid row-dev"
+				alt="Alexandra développeuse full stack">
+			<div class="product-overlay mt-3">
+				<h1 class="about-me mt-5 text-center"><span class="text-color-three">À</span> propos de moi</h1>
+				<p class="text-about mt-4 text-center">Ayant redéfini mon projet professionnel autour du développement
+					web, je recherche actuellement
+					un stage de 6 mois en tant que Développeuse full stack.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="col-lg-4 col-md-6 col-sm-7 m-2 pl-md-4">
+		<h2 class="title-banner"><span class="text-color-one">A</span>LEXANDRA<br>
+			<hr />DEVELOPPEUSE<br>FULL STACK<br>
+		</h2>
+	</div>
+</div>
+<div class="container-fluid mt-2 text-center">
+	<a href="https://www.linkedin.com/in/alexandra-oure/" target="_blank" class="btn-linkedin">
+		<span class="fa fa-linkedin"></span> <span class="btn-text">Linkedin</span>
+	</a>
+	<a href="{{asset('asset/document/Alexandra_dev_full_stack.pdf')}}" target="_blank" class="btn-cv">
+		<span class="fas fa-file-alt link-cv"></span> <span class="btn-text-cv">Mon CV</span>
+	</a>
+	<a href="https://github.com/OUREAlexandra" target="_blank" class="btn-github">
+		<span class="fa fa-github"></span> <span class="btn-text">Github</span>
+	</a>
+</div>
+</div>
+{% endblock %}
