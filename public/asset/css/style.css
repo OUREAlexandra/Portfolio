@@ -1,16 +1,47 @@
+html, body {
+  font-family: 'Jomhuria', cursive;
+}
+
+.alert-success {
+  background-color: green;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+  
+.alert-info {
+  background-color: #71ACB2;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+  
+.alert-error {
+  background-color: red;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+}
+
 /*NAVBAR________________________________________________________________________________________*/
-.nav-link{
+.logoimg {
+  width: 60%;
+}
+
+.nav-link {
   font-size: 20px;
-  font-family: 'Indie Flower', cursive;
   text-transform: uppercase;
 }
 
 .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
-  color: #DF3A01;
+  color: #71ACB2;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #DF3A01;
+  color: #71ACB2;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -19,19 +50,89 @@
 
 .navbar-toggler {
   font-size: 2.25rem; 
-  background-color: #DF3A01;
+  background-color: #71ACB2;
 }
 /*END NAVBAR________________________________________________________________________________________*/
 
 
 /*INDEX BODY________________________________________________________________________________________*/
-body{
-  background: url(https://i.ibb.co/WgmFBCt/image.png);
+body {
+  /* background: url(https://i.ibb.co/WgmFBCt/image.png); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.product-list-left-effect{
+.banner-background {
+  background-color: #71ACB2;
+}
+
+.home-block-banner {
+  position:relative;
+  }
+  .image-home img {
+  width: 100%;
+  position:relative;
+  filter: brightness(45%);
+  -webkit-filter: brightness(45%);
+  }
+  .home-block-banner h2 {
+  position: absolute; 
+  transform: translateY(-50%);
+  top: 45%;
+  left: 30%;
+  }
+  .home-block-banner a {
+  position: absolute; 
+  transform: translateY(-50%);
+  left: 45%;
+  top: 70%;
+  font-size: 22px;
+  }
+  .image-home {
+  position: relative;
+  }
+  .home-block-container h2 {
+  color: white;
+  font-size: 80px;
+  letter-spacing: 10px;
+  }
+  .button-suggestion {
+  border: 2px solid white;
+  color: white;
+  }
+  .button-suggestion:hover {
+  background-color: white;
+  color: black;
+  }
+  @media screen and (min-width: 860px) and (max-width: 1360px) {
+  .home-block-container h2 {
+    font-size: 40px;
+    letter-spacing: 10px;
+  }
+  .home-block-banner a {
+    left: 30%;
+    margin-top: 2%;
+  }
+  }
+  @media screen and (min-width: 375px) and (max-width: 860px) {
+  .home-block-container h2 {
+    font-size: 20px;
+    letter-spacing: 8px;
+    left: 20%;
+  }
+  .home-block-banner a {
+    left: 20%;
+    margin-top: 3%;
+  }
+  .home-block-banner a {
+    font-size: 10px;
+  }
+  .button-suggestion {
+    border: 1px solid white;
+  }
+  }
+
+.product-list-left-effect {
 	width:100%;
 	height:auto;
 	position:relative;
@@ -40,24 +141,22 @@ body{
   box-shadow: 0px 3px 6px #DF3A01;
 }
 
-.about-me{
+.about-me {
   font-size: 40px;
   color: #DF3A01;
-  font-family: 'Indie Flower', cursive;
 }
 
-.text-about{
-  font-family: 'Raleway', sans-serif;
+.text-about {
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
 }
 
-.product-list-left-effect img{
+/* .product-list-left-effect img {
 	transition-duration:0.4s;
 }
 
-.product-list-left-effect .product-overlay{
+.product-list-left-effect .product-overlay {
 	width:90%;
 	height:90%;
 	position:absolute;
@@ -70,44 +169,52 @@ body{
 	-webkit-transition: left 0.5s ease-in-out;
 }
 
-.product-list-left-effect .product-overlay h3{
+.product-list-left-effect .product-overlay h3 {
 	margin:0 0 12px 0;
 }
 
-.product-list-left-effect:hover .product-overlay{
+.product-list-left-effect:hover .product-overlay {
 	-webkit-transition: left 0.5s ease-in-out;
 	left:5%;
 }
 
-.product-list-left-effect:hover img{
+.product-list-left-effect:hover img {
 	 transform: scale(1.1);
-}
+} */
 
-.title-banner{
+.title-banner {
   font-size: 60px;
   color: black;
-  text-shadow: 0px 3px 6px #6d6d6d;
-  font-family: 'Indie Flower', cursive;
+  /* text-shadow: 0px 3px 6px #6d6d6d; */
 }
 
-hr{
+/* hr {
   border-top: 2px solid whitesmoke;
-}
+} */
 
-.text-color-one{
+.text-color-one {
   color: whitesmoke;
 }
 
-.text-color-two{
-  color: #DF3A01;
+.text-color-two {
+  color: #71ACB2;
 }
 
-.text-color-three{
+.text-color-three {
   color: black;
 }
 
+.price-color {
+  font-size: 20px;
+  color: #71ACB2;
+}
+
+.price-color:hover {
+  color: #04e5fa;
+}
+
 /*LIENS RS ET CV________________________________________________________________________________________*/
-.btn-linkedin{
+.btn-linkedin {
   color: white;
   background-color: #19649b;
   padding: 10px;
@@ -115,7 +222,7 @@ hr{
   text-align: center;
 }
 
-.btn-github{
+.btn-github {
   margin-left: 3%;
   color: #fff;
   background-color: #14191d;
@@ -123,7 +230,7 @@ hr{
   border-radius: 10px;
   text-align: center;
 }
-.btn-cv{
+.btn-cv {
   margin-left: 3%;
   color: #DF3A01 ;
   background-color: whitesmoke;
@@ -132,65 +239,51 @@ hr{
   text-align: center;
 }
 
-.fa-linkedin{
-  color: white;
-  font-size: 20px;
+.fa-file-alt {
+  color: #71ACB2;
 }
 
-.fa-file-alt{
-  color: #DF3A01;
-}
-
-.fa-github{
-color: #fff;
-font-size: 20px;
-}
-
-.btn-text{
+.btn-text {
   color: white;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
 
-.btn-text-cv{
-  color: #DF3A01;
+.btn-text-cv {
+  color: #71ACB2;;
   font-weight: bold;
-  font-family: 'Raleway', sans-serif;
   font-size: 18px;
 }
 /*FIN LIENS RS ET CV________________________________________________________________________________________*/
 
 
 /*ABOUT________________________________________________________________________________________*/
-.contain-about{
+.contain-about {
   margin-top: 3%;
-  box-shadow: 0px 3px 6px #DF3A01;
+  box-shadow: 0px 3px 6px whitesmoke;
   border-radius: 15px;
   padding: 20px;
 }
 
-.row-about{
+.row-about {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.title-about{
+.title-about {
   margin-bottom: 3%;
   text-transform: uppercase;
-  font-family: 'Indie Flower', cursive;
   font-weight: bold;
   color: rgb(59, 52, 52);
 }
 
-.text-about{
-  font-family: 'Raleway', sans-serif;
+.text-about {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.first{
+.first {
   margin-top: 8%;
   padding-top:20px ;
   padding-bottom:40px ;
@@ -200,119 +293,112 @@ font-size: 20px;
 
 
 /*CARD PROJETS________________________________________________________________________________________*/
-.title-section{
+.title-section {
   margin-bottom: 3%;
-  font-family: 'Indie Flower', cursive;
 }
 
-.img{
+.img {
   width: 50px;
   height: 50px;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 
-.card{
-  box-shadow: 0px 3px 6px #DF3A01;
+.card {
+  box-shadow: 0px 3px 6px whitesmoke;
   border-radius: 15px;
 }
 
-.project-card{
+.project-card {
   display: flex;
   justify-content: center;
 }
 
-.card-title{
-  font-family: 'Indie Flower', cursive;
+.card-title {
   text-decoration: underline;
   font-size: 40px;
   font-weight: bold;
-  color: #DF3A01;
+  color: #71ACB2;
+  letter-spacing: 10px;
 }
 
-.card-text{
-  font-family: 'Raleway', sans-serif;
-}
-
-.card-content{
-  font-family: 'Raleway', sans-serif;
+.card-content {
   color: rgb(0, 0, 0);
   font-size: 20px;
 }
 
-.card-description{
-  font-family: 'Indie Flower', cursive;
+.card-description {
   font-size: 16px;
 }
 
-.link-bottom{
+.link-bottom {
   margin: auto;
-  color: #DF3A01;
+  color: #71ACB2;
 }
-.link-bottom:hover{
+.link-bottom:hover {
   color:rgba(45, 186, 247, 0.2);
 }
 
-.btn-card{
+.btn-card {
   margin-top: 10% ;
 }
 
-.see-more{
-  color: #DF3A01;
+.see-more {
+  color: #71ACB2;
 }
 
-.card-gallery{
-  box-shadow: 0px 3px 6px #DF3A01;
+.card-gallery {
+  box-shadow: 0px 3px 6px whitesmoke;
 }
 /*FIN CARD________________________________________________________________________________________*/
 
 
 
 /*TECHNO__________________________________________________________________________________________*/
-.tech{
+.tech {
   font-size: 15px;
   font-weight: bold;
 }
 
-.icon-tech{
+.icon-tech {
   margin: auto;
   font-size: 25px;
 }
 
-.fa-html5{
+.fa-html5 {
   color: #ED730E;
 }
 
-.fa-css3-alt{
+.fa-css3-alt {
   color: #0485E0;
 }
 
-.fa-php{
+.fa-php {
   color: #678BE0;
 }
 
-.fa-js-square{
+.fa-js-square {
   color: #f7df1d;
 }
 
-.fa-bootstrap{
+.fa-bootstrap {
   color: #563d7c;
 }
 
-.fa-symfony{
+.fa-symfony {
   color: black;
 }
 
-.fa-react{
+.fa-react {
   color: #61dbfb;
 }
 
-.twig{
+.twig {
   color: green;
   font-size: 20px;
 }
 
-.icon-tech{
+.icon-tech {
   display:inline-block;
   margin-left: 3vh;
 }
@@ -332,15 +418,14 @@ font-size: 20px;
   overflow:auto;
 }
 
-.modal-title{
-  color: #DF3A01; 
-  font-family: 'Indie Flower', cursive;
+.modal-title {
+  color: #71ACB2; 
   font-size: 45px;
 }
 
 .close
 {
-  color:#DF3A01 ! important;
+  color: #71ACB2; ! important;
   opacity:1.0;
 } 
 
@@ -410,20 +495,24 @@ cursor:pointer;
 }
 /*FIN MODAL______________________________________________________________________________*/
 
+/*TARIFS________________________________________________________________________________*/
+.main h3 {
+  letter-spacing: 2px;
+}
+/*FIN TARIFS________________________________________________________________________________*/
 
 /*CONTACT________________________________________________________________________________________*/
 .contact100-form-title{
-  font-family: 'Indie Flower', cursive;
   font-size: 30px;
-  color: #DF3A01;
-}
-
-.validate-input{
-  font-family: 'Raleway', sans-serif;
+  color: #71ACB2;
 }
 
 .contact{
   margin-top: 100px;
+}
+
+.wrap-input100 {
+  font-size: 25px;
 }
 /*FIN CONTACT________________________________________________________________________________________*/
 
@@ -434,23 +523,33 @@ footer{
   height: 20vh;
 }
 
-.title-footer{
-  font-family: 'Indie Flower', cursive;
+.logoimg2 {
+  width: 5%;
+}
+
+.contact-infos {
   font-size: 20px;
+}
+
+.title-footer{
+  font-size: 15px;
+}
+
+.social-color {
+  color: #71ACB2;
 }
 /*FIN FOOTER________________________________________________________________________________________*/
 
 /*BUTTON_____________________________________________________________________________________________*/
 
 .bubbly-button{
-  font-family: 'Raleway', sans-serif;
   display: inline-block;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
   -webkit-appearance: none;
   appearance: none;
   background-color: whitesmoke ;
-  color: #DF3A01;
+  color: #71ACB2;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -467,7 +566,7 @@ footer{
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  color:#DF3A01; /* Text color */
+  color: #71ACB2;; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 15px; /* Rounded corners */
@@ -475,7 +574,7 @@ footer{
 }
 
 #myBtn:hover {
-  background-color:  #f06d41;
+  background-color: #99c5ca;;
   color: #fff;
 }
   
@@ -507,7 +606,7 @@ footer{
   }
   .bubbly-button:active {
     transform: scale(0.9);
-    background-color: #fd214a;
+    background-color: #71ACB2;;
     box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
   }
   .bubbly-button.animate:before {
@@ -543,3 +642,330 @@ footer{
       background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
     }
   }
+
+  .card-container {
+	  -webkit-perspective: 800px;
+   -moz-perspective: 800px;
+     -o-perspective: 800px;
+        perspective: 800px;
+        margin-bottom: 30px;
+}
+/* flip the pane when hovered */
+.card-container:not(.manual-flip):hover .card,
+.card-container.hover.manual-flip .card{
+	-webkit-transform: rotateY( 180deg );
+-moz-transform: rotateY( 180deg );
+ -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+
+.card-container.static:hover .card,
+.card-container.static.hover .card {
+	-webkit-transform: none;
+-moz-transform: none;
+ -o-transform: none;
+    transform: none;
+}
+/* flip speed goes here */
+.card {
+	 -webkit-transition: -webkit-transform .5s;
+   -moz-transition: -moz-transform .5s;
+     -o-transition: -o-transform .5s;
+        transition: transform .5s;
+-webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+     -o-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	-webkit-backface-visibility: hidden;
+   -moz-backface-visibility: hidden;
+     -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #FFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+		-webkit-transform: rotateY( 180deg );
+   -moz-transform: rotateY( 180deg );
+     -o-transform: rotateY( 180deg );
+        transform: rotateY( 180deg );
+        z-index: 3;
+}
+
+.back .btn-simple{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    margin-left: 12vh;
+}
+/*        Style       */
+
+
+.card{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 4px;
+    color: #444444;
+}
+.card-container, .front, .back {
+	width: 100%;
+	height: 420px;
+	border-radius: 4px;
+	/* -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
+-moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16);
+box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.16); */
+}
+.card .cover{
+    height: 105px;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+.card .cover img{
+    width: 100%;
+}
+.card .user{
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    margin: -55px auto 0;
+    overflow: hidden;
+    width: 120px;
+}
+.card .user img{
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 4px solid #FFFFFF;
+    width: 100%;
+}
+
+.card .content{
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    padding: 10px 20px 20px;
+}
+.card .content .main {
+    min-height: 160px;
+}
+.card .back .content .main {
+    height: 215px;
+}
+.card .price-name {
+		/* font-family: 'Arima Madurai', cursive; */
+    font-size: 40px;
+    color: #71ACB2;
+    line-height: 28px;
+    margin: 10px 0 0;
+    text-align: center;
+    text-transform: capitalize;
+}
+.card h5{
+    margin: 5px 0;
+    font-weight: 400;
+    line-height: 20px;
+}
+.card .price-average{
+    color: #71ACB2;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.details {
+  font-size: 15px;
+}
+
+.card .footer {
+    color: #999999;
+    margin: 30px 0 0;
+    padding: 10px 0 0;
+    text-align: center;
+}
+.card .footer .social-links{
+    font-size: 18px;
+}
+.card .footer .social-links a{
+    margin: 0 7px;
+}
+.card .footer .btn-simple{
+    margin-top: -6px;
+}
+.card .header {
+    padding: 15px 20px;
+}
+.card .motto{
+		/* font-family: 'Arima Madurai', cursive; */
+    border-bottom: 1px solid #EEEEEE;
+    color: #71ACB2;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card .stats-container{
+	width: 100%;
+	margin-top: 50px;
+}
+.card .stats{
+	display: block;
+	float: left;
+	width: 33.333333%;
+	text-align: center;
+}
+
+.card .stats:first-child{
+	border-right: 1px solid #EEEEEE;
+}
+.card .stats:last-child{
+	border-left: 1px solid #EEEEEE;
+}
+.card .stats h4{
+		/* font-family: 'Arima Madurai', cursive; */
+	font-weight: 300;
+	margin-bottom: 5px;
+}
+.card .stats p{
+	color: #777777;
+}
+/*      Just for presentation        */
+
+.title{
+    color: #506A85;
+    text-align: center;
+    font-weight: 300;
+    font-size: 44px;
+    margin-bottom: 90px;
+    line-height: 90%;
+}
+.title small{
+    font-size: 17px;
+    color: #999;
+    text-transform: uppercase;
+    margin: 0;
+}
+.space-30{
+	height: 30px;
+	display: block;
+}
+.space-50{
+    height: 50px;
+    display: block;
+}
+.space-200{
+    height: 200px;
+    display: block;
+}
+.white-board{
+    background-color: #FFFFFF;
+    min-height: 200px;
+    padding: 60px 60px 20px;
+}
+.ct-heart{
+    color: #F74933;
+}
+
+ pre.prettyprint{
+    background-color: #ffffff;
+    border: 1px solid #999;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+}
+.atv, .str{
+    color: #05AE0E;
+}
+.tag, .pln, .kwd{
+     color: #3472F7;
+}
+.atn{
+  color: #2C93FF;
+}
+.pln{
+   color: #333;
+}
+.com{
+    color: #999;
+}
+
+.btn-simple{
+    opacity: .8;
+    background-color: transparent;
+    font-size: 40px;
+}
+
+.btn-simple:hover,
+.btn-simple:focus{
+    background-color: transparent;
+    box-shadow: none;
+    opacity: 1;
+}
+.btn-simple i{
+    font-size: 16px;
+}
+
+.btn-simple .hand {
+  font-size: 30px;
+}
+
+.btn-simple .hand-back {
+  font-size: 30px;
+}
+
+.navbar-brand-logo{
+    padding: 0;
+}
+.navbar-brand-logo .logo{
+    border: 1px solid #333333;
+    border-radius: 50%;
+    float: left;
+    overflow: hidden;
+    width: 60px;
+}
+.navbar .navbar-brand-logo .brand{
+    color: #FFFFFF;
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 60px;
+}
+.navbar-default .navbar-brand-logo .brand{
+    color: #555;
+}
+
+
+/*       Fix bug for IE      */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .front, .back{
+        -ms-backface-visibility: visible;
+        backface-visibility: visible;
+    }
+
+    .back {
+        visibility: hidden;
+        -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
+    }
+    .front{
+        z-index: 4;
+    }
+    .card-container:not(.manual-flip):hover .back,
+    .card-container.manual-flip.hover .back{
+        z-index: 5;
+        visibility: visible;
+    }
+}

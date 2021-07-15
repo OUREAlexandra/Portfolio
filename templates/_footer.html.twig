@@ -1,5 +1,5 @@
 
-<footer class="bg-light mt-5">
+{# <footer class="bg-light mt-5">
   <div class="text-center p-3">
     <a class="link-bottom" href="www.linkedin.com/in/alexandra-oure" target="_blank">
       <i class="fab fa-linkedin-in fa-2x mr-3"></i>
@@ -7,9 +7,36 @@
     <a class="link-bottom" href="https://github.com/OUREAlexandra" target="_blank">
       <i class="fab fa-github-alt fa-2x mr-3"></i>
     </a>
-    <a class="link-bottom" href="{{asset('asset/document/Alexandra_dev_fullstack.pdf')}}" target="_blank">
-      <i class="far fa-file-pdf fa-2x mr-3"></i>
-    </a>
-    <p class="nav-bar-white title-footer mt-3">© 2020 Copyright: Alexandra développeuse full stack</p>
+    <div class="container justify-fluid-content-around pt-2">
+        <div class="text-center">
+            <div class="col-lg-12">
+                {# <h3 class="links-style">Contact<hr class="hr-color-newsletter"></h3> #}
+                {# <p class="contact-infos">contact@alex-tech.com - 06 30 86 42 17</p>
+            </div>
+        </div>
+    </div>
+    <p class="nav-bar-white title-footer mt-3">© 2020 Copyright: <img class="logoimg2" src="/bundles/img/logo_alexTech.png" alt="Alex-tech"> développement web full stack</p>
   </div>
+</footer> #}
+
+<footer class="mt-5 pb-4 footer bg-light d-none d-lg-block">
+    <div class="container pt-2">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <a class="navbar-brand " href="/"><img class="logoimg" src="/bundles/img/logo_alexTech.png" alt="alex-TECH"></a>
+                <div class="container-fluid">
+                    <a class="navbar-brand social-color" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a class="navbar-brand social-color" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                    <a class="navbar-brand social-color" href="https://twitter.com/?lang=fr" target="_blank"><i class="fab fa-twitter-square"></i></a> 
+                    <a class="navbar-brand social-color" href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="pt-3 links-style">contact@alex-tech.com - 06 30 86 42 17<hr class="hr-color"></h3>
+                <p><a class="navbar-brand contact-footer price-color" href="{{path('contact')}}">Demande de devis</a></p>
+            </div>
+        </div>
+    </div>
+    <p class="mt-3 nav-bar-white title-footer text-center">© 2020 Copyright: 
+    <img class="logoimg2" src="/bundles/img/logo_alexTech.png" alt="Alex-tech"> développement web full stack</p>
 </footer>

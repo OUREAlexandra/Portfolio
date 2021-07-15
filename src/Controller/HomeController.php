@@ -106,12 +106,20 @@ class HomeController extends AbstractController
 
                 ]);
             $mailer->send($email);
-            $this->addFlash('message', 'Mail de contact envoyé !');
+            $this->addFlash('info', 'Votre demande de devis a bien été envoyée!');
             return $this->redirectToRoute('home');
         }
         
         return $this->render('home/contact.html.twig', [
             'form' => $form->createView()
         ]);
+    }
+
+    /**
+     * @Route("/tarifs", name="tarifs")
+     */
+    public function price()
+    {
+        return $this->render('home/tarifs.html.twig');
     }
 }

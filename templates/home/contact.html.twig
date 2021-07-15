@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Me contacter{% endblock %}
+{% block title %}Devis{% endblock %}
 
 {% block body %}
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
@@ -13,30 +13,30 @@
 
             {{ form_start(form) }}
             <span class="contact100-form-title name text-center">
-                <span class="text-color-three">C</span>ontactez moi
+                <span class="text-color-three">P</span>arlez-nous de votre projet<br> et recevez votre devis
             </span>
 
-            <div class="wrap-input100 validate-input" data-validate="Name is required">
-                {{ form_row(form.firstname) }}
-
-                <span class="focus-input100"></span>
-                <span class="symbol-input100">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                </span>
-            </div>
             <div class="wrap-input100 validate-input" data-validate="Name is required">
                 {{ form_row(form.lastname) }}
 
                 <span class="focus-input100"></span>
                 <span class="symbol-input100">
-                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <i class="mt-3 fa fa-user" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="wrap-input100 validate-input" data-validate="Name is required">
+                {{ form_row(form.firstname) }}
+
+                <span class="focus-input100"></span>
+                <span class="symbol-input100">
+                    <i class="mt-3 fa fa-user" aria-hidden="true"></i>
                 </span>
             </div>
             <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
                 {{ form_row(form.email) }}
                 <span class="focus-input100"></span>
                 <span class="symbol-input100">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i class="mt-3 fas fa-at" aria-hidden="true"></i>
                 </span>
             </div>
             <div class="wrap-input100 validate-input" data-validate="Message is required">

@@ -1,11 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}A propos{% endblock %}
+{% block title %}À propos{% endblock %}
 
 {% block body %}
+<h2 class="pt-3 pb-3 banner-background text-center title-banner"><img src="/bundles/img/logo_alexTech2.png" alt="Alex-tech"><br>
+DEVELOPPEMENT WEB FULL STACK</h2>
 <div class="row align-items-center justify-content-center main-block">
-	<div class="col-lg-4 col-md-6 col-sm-7 m-2 pr-4 mt-3">
-		<div class="product-list-left-effect">
+	<div class="mt-5 col-lg-4 col-md-6 col-sm-7 m-2 pr-4">
+		{# <div class="product-list-left-effect">
 			<img src="https://i.ibb.co/KsKWVJj/Capture-du-2021-01-28-22-17-12.png" class="img-fluid row-dev"
 				alt="Alexandra développeuse full stack">
 			<div class="product-overlay mt-3">
@@ -15,24 +17,33 @@
 					un stage de 6 mois en tant que Développeuse full stack.
 				</p>
 			</div>
+		</div> #}
+		<div class="home-block-banner">
+    		<div class="image-home">
+        		<img src="/bundles/img/code.jpg" alt='Développement full stack'>
+    		</div>
+    		<div class="home-block-container">
+        		<h2>À PROPOS</h2>
+    		</div>
 		</div>
+
 	</div>
-	<div class="col-lg-4 col-md-6 col-sm-7 m-2 pl-md-4">
-		<h2 class="title-banner"><span class="text-color-one">A</span>LEXANDRA<br>
-			<hr />DEVELOPPEUSE<br>FULL STACK<br>
-		</h2>
+	<div class="bg-light col-lg-4 col-md-6 col-sm-7 m-2 pl-md-4">
+		<p class="text-about mt-4 text-center">Nous vous accompagnons dans le développement de vos sites internet, 
+			du site vitrine à la marketplace en passant par le site e-commerce. 
+			<br>Chaque projet étant unique, un devis personnalisé est réalisé pour déterminer le tarif global de votre site sur-mesure.
+
+			<br><br>Stack technique - PHP, Symfony</p>
+
+			<br><br><p class="text-center"> <a class="price-color" href="{{path('tarifs')}}">Nos tarifs > </a></p>
 	</div>
 </div>
-<div class="container-fluid mt-2 text-center">
+{# <div class="container-fluid mt-2 text-center">
 	<a href="https://www.linkedin.com/in/alexandra-oure/" target="_blank" class="btn-linkedin">
 		<span class="fa fa-linkedin"></span> <span class="btn-text">Linkedin</span>
-	</a>
-	<a href="{{asset('asset/document/Alexandra_dev_full_stack.pdf')}}" target="_blank" class="btn-cv">
-		<span class="fas fa-file-alt link-cv"></span> <span class="btn-text-cv">Mon CV</span>
 	</a>
 	<a href="https://github.com/OUREAlexandra" target="_blank" class="btn-github">
 		<span class="fa fa-github"></span> <span class="btn-text">Github</span>
 	</a>
-</div>
-</div>
+</div> #}
 {% endblock %}
